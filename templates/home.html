@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SocioSync</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: #f0f8f8;
+            margin: 0; 
+            font-family: "Outfit", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+}
+        
+        #nav-bar {
+            width: 90vw;
+            height: 10vh;
+            background-color: #ffffff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            margin: auto; 
+            margin-top: 40px;
+            margin-bottom: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .nav-content{
+            display: flex;
+            flex-direction: row;
+            gap: 15px;
+            padding: 20px;
+        }
+
+        .main {
+            width: 80%;
+            background-color: #ffffff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            margin-top: 20px; 
+            z-index: 99;
+        }
+        .main form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .main input{
+            margin: 10px;
+            padding: 10px 15px;
+            background-color: #f0f8f8;
+            border: none;
+            border-radius: 5px;
+        }
+        .main button{
+            background-color: #55bdb3;
+            padding: 10px;
+            color: white;
+            width: 60%;
+            border: none;
+            border-radius: 5px;
+        }
+        .submitBtn{
+            display: flex;
+            justify-content: center;
+            margin-top: -10px;
+            margin-bottom: 20px;
+        }
+        .mainPage{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        .left-part{
+            width: 40%;
+        }
+        .right-part{
+            width: 40%;
+        }
+        .grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        /* margin-top: 20px; */
+        padding: 10px;
+    }
+
+    .grid-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 15px;
+        background-color: #f0f8f8;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        font-size: 16px;
+        font-weight: 500;
+        color: #000000;
+    }
+
+    #outer{
+        background-color: #ffffff;
+        padding: 5px;
+        width: 70%;
+        border-radius: 15px;
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    .tick-icon {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+    }
+    .at-img{
+        transform: translateX(calc(50% - 30%));
+    }
+    .logo{
+        align-content: center;
+        height: 100%;
+        padding: 10px;
+        margin: 20px;
+    }
+    
+    </style>
+</head>
+<body>
+    <nav>
+        <div id="nav-bar">
+            <div class="logo">
+                <img src="static/imgs/Amazon_icon.png" alt="logo" height="80%">
+            </div>
+            <div class="nav-content">
+                <div class="item">Home</div>
+                <div class="item">About</div>
+                <div class="item">Contact</div>
+            </div>
+        </div>
+    </nav>
+    <div class="mainPage">
+        <div class="left-part">
+            <div class="main">
+                <form method="POST">
+                    <input type="url" name="post" placeholder="Enter URL"><br>
+                    <div class="submitBtn">
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+            <img class="at-img" src="static/imgs/one.png" width="60%">
+        </div>
+
+        <div class="right-part">
+
+            <p style="color: #55BDB3; font-weight: 600; font-size: 31.65px; margin-bottom: 5px;">WE PROVIDE</p>
+            <p style="color: #0F2435; font-weight: 600; font-size: 31.65px; margin-bottom: 5px;">ACTION-PROVOKING</p>
+            <p style="color: #000000; font-weight: 400; font-size: 22.15px; margin-bottom: 5px;">TO HELP YOU LIST PRODUCTS</p>
+            <p style="color: #000000; font-weight: 400; font-size: 15.08px; margin-top: 10px;">Transform social media content into impactful Amazon product listings with our AI-driven platform, streamlining product visibility, and sales conversions for SMBs. Empower sellers with real-time analytics to create optimized, trend-driven listings effortlessly. Revolutionize your online presence with interactive, high-converting listings crafted in minutes! </p>
+            <div id="outer">
+                <div class="grid-container">
+                    <div class="grid-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25px" height="30px" fill="#55bdb3" class="bi bi-check-circle-fill" viewBox="0 0 16 16" style="margin-right: 10px">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                        </svg>
+                        <span>Instant Generation</span>
+                    </div>
+                    <div class="grid-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25px" height="30px" fill="#55bdb3" class="bi bi-check-circle-fill" viewBox="0 0 16 16" style="margin-right: 10px">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                        </svg>
+                        <span>Hassle Free</span>
+                    </div>
+                    <div class="grid-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25px" height="30px" fill="#55bdb3" class="bi bi-check-circle-fill" viewBox="0 0 16 16" style="margin-right: 10px">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                        </svg>
+                        <span>OCR based extraction</span>
+                    </div>
+                    <div class="grid-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25px" height="30px" fill="#55bdb3" class="bi bi-check-circle-fill" viewBox="0 0 16 16" style="margin-right: 10px">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                        </svg>
+                        <span>Finds missing info</span>
+                    </div>
+                    <div class="grid-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25px" height="30px" fill="#55bdb3" class="bi bi-check-circle-fill" viewBox="0 0 16 16" style="margin-right: 10px">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                        </svg>
+                        <span>GEN-AI Powered</span>
+                    </div>
+                    <div class="grid-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25px" height="30px" fill="#55bdb3" class="bi bi-check-circle-fill" viewBox="0 0 16 16" style="margin-right: 10px">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                        </svg>
+                        <span>Image extraction</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
